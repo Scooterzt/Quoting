@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quots</title>
+</head>
+<body>
+    <h2>Here are the awesome quotes!</h2>
+    @foreach(var n in ViewBag.quotes){
+        <h5>@n["name"]</h5>
+        <p>@n["quote"]</p>
+        <p>@n["created_at"]</p>
+    }
+</body>
+</html>
